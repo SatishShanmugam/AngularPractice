@@ -1,0 +1,21 @@
+<table style = "width:100%">
+   <thead>
+     <tr>
+       <th>First Name</th>
+       <th>Emp Id</th>
+       <th>Phone Number</th>
+       <th>Gender</th>
+     </tr>
+   </thead>
+   <tbody *ngIf="employees">
+     <tr *ngFor = "let emp of employees">
+       <td>{{emp.firstName | uppercase}}</td>
+       <td>{{emp.empid | uppercase}}</td>
+       <td>{{emp.mobile}}</td>
+       <td>{{emp.gender | uppercase}}</td>
+     </tr>
+     <tr * ngIf = "employees.length ==0">
+       <td colspan="5">No data to display</td>
+     </tr>
+   </tbody>
+</table>

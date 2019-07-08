@@ -1,0 +1,44 @@
+
+<h3 align="center">EMPLOYEE REGISTRATION FORM</h3>
+
+ 
+<table align="center" cellpadding = "10">
+ 
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" [(ngModel)]="First_Name" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<tr>
+<td>EMP ID</td>
+<td><input type="text" [(ngModel)]="EMP_ID" maxlength="30"/>
+</td>
+</tr>
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" [(ngModel)]="Mobile_Number" maxlength="10" />
+(10 digit number)
+</td>
+</tr>
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" [(ngModel)]="Gender" value="Male" />
+Female <input type="radio" [(ngModel)]="Gender" value="Female" />
+</td>
+</tr>
+</table>
+<div style="text-align:center;">
+<input  type="button" value="Register" (click)="onClickRegister()" class ="button"/>
+</div>
+<div>
+    
+</div>
+
+<div style="text-align:center;">
+    <input  type="button" value="Save" (click)="onClickSave()" class ="button"/>
+    </div>
+    
